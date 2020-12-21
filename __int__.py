@@ -1,1 +1,4 @@
-from MaliciousDetection import SystemScanner
+from MaliciousDetection import (SystemScanner,
+                                VirusTotalUtil,
+                                reporting
+)

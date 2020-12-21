@@ -1,6 +1,7 @@
 import hashlib
 from os import listdir
 from os.path import isfile, join
+from threading import BoundedSemaphore, Thread
 
 
 class Scan(object):
@@ -26,15 +27,9 @@ class Scan(object):
 				}
 			)
 
-
-		'''self.file_objects.append({})
-		self.md5_hash = self.calculate_md5_hash()
-		self.quarantine_files = self.quarantine_files()'''
-
 	def scan_files(self, file_path):
 		return [f'{self.file_path}/{file}' for file in listdir(self.file_path) if isfile(join(self.file_path, file))]
 
-	'''/home/scoop/Downloads'''
 	def calculate_md5_hash(self, file):
 		md5_hash = hashlib.md5()
 		with open (file, "rb") as check_file:
