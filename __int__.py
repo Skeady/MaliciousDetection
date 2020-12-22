@@ -1,4 +1,6 @@
-from MaliciousDetection import (SystemScanner,
-                                VirusTotalUtil,
-                                reporting
+from MaliciousDetection import (
+    malware_detection,
+    SystemScanner,
+    VirusTotalUtils,
+    reporting,
 )
