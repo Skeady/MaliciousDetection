@@ -48,8 +48,8 @@ class Scan(object):
 			for file in self.all_files:
 				file_name = file.replace(f'{self.file_path}/', '')
 				_objects.update({file_name: {'md5': self.calculate_md5_hash(file),
-											 'path': self.file_path
-								}
+							     'path': self.file_path
+							    }
 						}
 				)
 			return _objects
