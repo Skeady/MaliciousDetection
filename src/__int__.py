@@ -1,6 +1,6 @@
-from MaliciousDetection import (
+from . import (
     malware_detection,
-    SystemScanner,
-    VirusTotalUtils,
     reporting,
+    SystemScanner,
+    VirusTotalUtils
 )

@@ -1,5 +1,5 @@
 # Report Template to merge reports for all files.
-virus_total_report_template = """
+report_generation_template = """
     The following files were found to be Malicious:
         {report}
 """

@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+
 setup(
     name="MaliciousDetection",
     version="1.0",
@@ -6,6 +7,7 @@ setup(
     package_dir={"": "src"},
     entry_points="""\
     [console_scripts]
-    malware-detection = MaliciousDetection.cli:cli
+    malware-detection = cli:cli
     """
 )
+
