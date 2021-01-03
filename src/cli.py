@@ -7,8 +7,8 @@ formatter = '%(asctime)s [%(levelname)s] [%(threadName)s] [%(name)s] %(message)s
 
 
 @click.command()
-@click.option('-p', '--path', type=str, required=True)
-@click.option('-v', '--verbose', is_flag=True)
+@click.option('-p', '--path', type=str, required=True, help='User specified path')
+@click.option('-v', '--verbose', is_flag=True, help='Enable Debugging')
 
 # Cli used to handle Args passed by user and setup logging
 def cli(path, verbose):
