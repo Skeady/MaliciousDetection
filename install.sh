@@ -1,6 +1,11 @@
 #!/bin/bash
 
+if [ "$(whoami)" != "root" ]; then
+	echo -e "\e[31mPlease run as root or use \e[4msudo ./install.sh !"
+	exit 1
+fi
 apt install python3-pip
+pip3 install setuptools
 pip3 install python-decouple
 pip3 install virustotal-api
 touch .env
