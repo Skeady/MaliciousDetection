@@ -123,7 +123,7 @@ class Scan(object):
         md5_hash_regex_pattern = re.compile(r'"[0-9a-fA-F]{32}"')
         print('\nExtracting MD5 hashes from NSRLFile')
         try:
-            with open('./NSRLFile.txt') as nsrl_reference:
+            with open('NSRLFile.txt') as nsrl_reference:
                 for line in tqdm(nsrl_reference):
                     if md5_hash_regex_pattern.search(line):
                         benign_md5_hash = md5_hash_regex_pattern.search(line).group()
