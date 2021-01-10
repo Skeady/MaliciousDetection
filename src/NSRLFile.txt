@@ -1,2 +1,0 @@
-SHA-1","MD5","CRC32","FileName","FileSize","ProductCode","OpSystemCode","SpecialCode"
-"00000079FD7AAC9B2F9C988C50750E1F50B27EB5","06f8366068de3aef13c61c7bb6476b4d","7A5407CA","string.txt",2520,190718,"362",""
