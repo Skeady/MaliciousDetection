@@ -8,6 +8,7 @@ apt install python3-pip
 pip3 install setuptools
 pip3 install python-decouple
 pip3 install virustotal-api
+pip3 install tqdm
 touch .env
 echo "Enter VirusTotal API Key: "
 read api_key

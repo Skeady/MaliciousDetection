@@ -1,3 +1,4 @@
 .env
 *.egg-info
+NSRLFile.txt
 __pycache__/
